@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+@media (min-width: 991px) {
+    .container {
+        width: 970px;
+    }
+}
+@media (min-width:1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+.page {
+    padding: 20px;
+}
+.page .container {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 20px;
+} 
+@media (max-width:767px) {
+    .page .container {
+      display: flex;
+      flex-direction: column;
+  }
+  }
+.box {
+    box-shadow: 1px 1px 9px 0px  hsl(0, 0%, 81%);
+    padding: 10px 15px;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+.page .container .box1 {
+    background-color:  hsl(263, 55%, 52%);
+    background-image: url(/testimonials-grid-section-main//images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: 90% 6px;
+    background-size: 100px;
+    grid-area: 1 /1 /2 /3;
+}
+.page .container .box2 {
+    grid-area: 1 / 3 / 2 /4;
+    background-color: hsl(217, 19%, 35%);
+    padding: 10px 20px;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+.page .container .box3 {
+    grid-area: 1 / 4 / 3 /5;
+    background-color: hsl(0, 0%, 100%);
+}
+.page .container .box4 {
+    grid-area: 2 / 1 / 3 / 2;
+    background-color: hsl(0, 0%, 100%);
+}
+.page .container .box5 {
+   grid-area: 2 / 2 / 3 / 4;
+    background-color: hsl(219, 29%, 14%);
+}
+.page .container .header {
+    display: flex;
+    align-items: center;
+    padding-bottom: 13px;
+}
+.page .container .info {
+    display: flex;
+    flex-direction: column;
+}
+.page .container .info span:first-child {
+    font-size: 14px;
+    font-weight: bold;
+    color: hsl(210, 46%, 95%);
+}
+.page .container .info span:last-child {
+   font-size: 9px;
+   color: hsl(0, 0%, 81%);
+}
+.page .container img {
+    width: 40px;
+    border: 1px solid  hsl(0, 0%, 81%);
+    margin-right: 15px;
+    border-radius: 50%;
+    height: 40px;
+}
+.page .container h3 {
+    font-size: 19px;
+    color:  hsl(210, 46%, 95%);
+    font-weight: 500;
+    padding-bottom: 15px;
+}
+.page .container p {
+    font-size: 13px;
+    font-weight: bold;
+    color: hsl(0deg 0% 81% / 62%)
+}
+.page .container .box3 .info span:first-child,
+.page.container .box4 .info span:first-child{
+    color: black;
+}
+.page .container .box3 .info span:last-child,
+.page .container .box4 .info span:last-child {
+    color: #000000ab;
+}
+.page .container .box3 h3,
+.page .container .box4 h3 {
+    color: black;
+}
+.page .container .box3 p,
+.page .container .box4 p {
+    color: #0000006b;
+}
